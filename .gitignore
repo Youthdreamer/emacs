@@ -1,0 +1,56 @@
+# --- 1. 编译后的二进制文件 ---
+*.elc
+*.eln
+
+# --- 2. 自动保存与备份文件 ---
+*~
+\#*\#
+/.emacs.d/.python-environments
+/.emacs.d/auto-save-list/
+/.emacs.d/backups/
+/.emacs.d/bookmarks
+/.emacs.d/places
+
+# --- 3. 插件管理器目录 (重要) ---
+# 建议忽略插件源代码，只保留配置文件。这样你换电脑时会自动重新下载。
+# 如果你用 package.el:
+elpa/
+# 如果你用 straight.el:
+straight/
+# 如果你用 elpaca:
+elpaca/
+
+# --- 4. 运行时的持久化数据 (各种插件生成的缓存) ---
+.cache/
+.projects/
+.ido.last
+.revive.el
+ac-comphist.dat
+anaconda-mode/
+auto-save-list/
+recentf
+savehist
+saveplace
+tramp
+url/
+history
+projects.txt
+smex-items
+semanticdb/
+var/
+server/
+eln-cache/
+# --- 5. LSP 与补全缓存 ---
+.lsp-session-v1
+.eglot-history
+.ccls-cache/
+.clangd/
+.pyim/
+
+# --- 6. 个人/敏感配置文件 ---
+# 之前建议你把 Customize 变量重定向到此文件，通常不建议同步它
+custom.el
+
+# 存放密码等敏感信息的文件（如果以后你会用到的话）
+authinfo
+authinfo.gpg
