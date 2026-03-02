@@ -1,5 +1,6 @@
 (add-to-list 'load-path (expand-file-name "core" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "theme" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lsp" user-emacs-directory))
 
 (require 'basic)
 ;;; init-package.el --- Package Manager Configuration -*- lexical-binding: t -*-
@@ -32,3 +33,6 @@
 ;; 2. 如果该文件存在，则加载它（防止你之前在 UI 界面做的设置丢失）
 (when (file-exists-p custom-file)
   (load custom-file))
+
+;; LSP 配置
+(require 'lsp)

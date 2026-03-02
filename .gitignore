@@ -19,6 +19,8 @@ elpa/
 straight/
 # 如果你用 elpaca:
 elpaca/
+# treesiter
+tree-sitter/
 
 # --- 4. 运行时的持久化数据 (各种插件生成的缓存) ---
 .cache/
