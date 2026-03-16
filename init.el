@@ -1,7 +1,7 @@
 (add-to-list 'load-path (expand-file-name "core" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "theme" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lsp" user-emacs-directory))
-
+(add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
 (require 'basic)
 ;;; init-package.el --- Package Manager Configuration -*- lexical-binding: t -*-
 
@@ -36,3 +36,6 @@
 
 ;; LSP 配置
 (require 'lsp)
+
+(require 'ui)
+(require 'navigation)

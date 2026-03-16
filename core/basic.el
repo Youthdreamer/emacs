@@ -44,4 +44,8 @@
 ;; 如果你希望所有 Frame（包括新开的窗口）都生效，建议也把字体加入默认列表
 (add-to-list 'default-frame-alist '(font . "Fira Code Nerd Font-14"))
 
+;; 开启 which-key 模式
+(which-key-mode)
+;; 可选：调整弹出等待时间（默认是 1.0 秒，改为 0.5 秒感官更快）
+(setq which-key-idle-delay 0.5)
 (provide 'basic)
